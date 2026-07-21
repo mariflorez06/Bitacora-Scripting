@@ -1,13 +1,15 @@
-namespace Taller_1
-{
+### Punto 1 
+#### Programas
+    namespace Taller_1
+    {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //EjerMatriz();
-            //EjerCadena();
-            //EjerCiclo();
-            //EjerFuncion1();
+            EjerMatriz();
+            EjerCadena();
+            EjerCiclo();
+            EjerFuncion1();
             EjerFuncion2();
         }
 
@@ -232,7 +234,43 @@ namespace Taller_1
 
             Console.WriteLine($"\n El resultado de un solo digito es: {num}");
         }
+      }
     }
-}
-'''
+#### Preguntas teoricas
+1. ¿Qué es una variable bandera? Escriba un ejemplo.<br> 
+   Es una variable que sirve como "interruptor" para un evento o accion especifica, es un booleano que se prende (true) o se apaga (false).
+   
+       class Ventilador
+       {
+        // La variable bandera que guarda el estado del objeto
+        private boolean estaEncendido = false; 
+
+        public void encender()
+           {
+               estaEncendido = true; // Levantamos la bandera
+               System.out.println("El ventilador ahora está encendido.");
+           }
+
+        public void apagar()
+           {
+               estaEncendido = false; // Bajamos la bandera
+               System.out.println("El ventilador ahora está apagado.");
+           }
+
+        public void girar()
+           {
+              // Evaluamos el estado de la bandera antes de actuar
+               if (estaEncendido)
+                 { 
+                    System.out.println("Girando y tirando aire...");
+                 } else
+                   {
+                     System.out.println("No se puede girar. El ventilador está apagado.");
+                   }
+           }
+        }
+2. Dibuje el diagrama de flujo de la estructura do-while.<br>
+<img width="793" height="758" alt="image" src="https://github.com/user-attachments/assets/ca0dd8c2-7838-4115-83d8-bea162a23edf" />
+
+
 
